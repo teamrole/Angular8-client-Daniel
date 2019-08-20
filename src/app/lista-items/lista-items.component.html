@@ -1,0 +1,25 @@
+<h2>Products</h2>
+
+<div *ngFor="let product of items">
+
+  <h3>
+    <a [title]="product.nome + ' details'">
+      {{ product.nome }}
+    </a>
+  </h3>
+  <p>Quantidade: {{product.qtd}}</p>
+  <p>Valor R$: {{product.valor}}</p>
+  <!--
+  <p *ngIf="product.description">
+    Description: {{ product. }}
+  </p>
+-->
+  <button (click)="share()">
+    Share
+  </button> 
+
+  <app-produto-alerta
+    [product] ="product" (notify)="onNotify(product.nome)">    
+  </app-produto-alerta>
+
+</div>
