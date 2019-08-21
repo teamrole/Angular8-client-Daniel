@@ -9,6 +9,7 @@ import { ProdutoAlertaComponent } from './produto-alerta/produto-alerta.componen
 import { DetalheItemsComponent } from './detalhe-items/detalhe-items.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     ProdutoAlertaComponent,
     DetalheItemsComponent,
     TopBarComponent,
-    PageNotFoundComponent    
+    PageNotFoundComponent,
+    CartComponent    
   ],
   imports: [
     BrowserModule,

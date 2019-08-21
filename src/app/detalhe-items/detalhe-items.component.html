@@ -2,5 +2,6 @@
     <h3>{{ product.nome }}</h3>
     <h4>{{ product.valor | currency }}</h4>
     <p>Quantidade: {{ product.qtd }}</p>
+    <button (click)="addToCart(product)">Comprar</button>
 </div> 
   

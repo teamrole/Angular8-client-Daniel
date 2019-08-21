@@ -4,10 +4,12 @@ import { Routes, RouterModule } from '@angular/router';
 import { ListaItemsComponent } from './lista-items/lista-items.component';
 import { DetalheItemsComponent } from './detalhe-items/detalhe-items.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CartComponent } from './cart/cart.component';
 
 const routes: Routes = [
   { path: '', component: ListaItemsComponent },
   { path: 'products/:productId', component: DetalheItemsComponent },
+  { path: 'cart', component: CartComponent},
   /*
   {
     path: 'heroes',
