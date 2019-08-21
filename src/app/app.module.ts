@@ -1,13 +1,14 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { ListaItemsComponent } from './lista-items/lista-items.component';
 import { ProdutoAlertaComponent } from './produto-alerta/produto-alerta.component';
 import { DetalheItemsComponent } from './detalhe-items/detalhe-items.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -15,16 +16,12 @@ import { TopBarComponent } from './top-bar/top-bar.component';
     ListaItemsComponent,
     ProdutoAlertaComponent,
     DetalheItemsComponent,
-    TopBarComponent    
+    TopBarComponent,
+    PageNotFoundComponent    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,    
-    RouterModule.forRoot([
-      { path: '', component: ListaItemsComponent },
-      { path: 'products/:productId', component: DetalheItemsComponent },
-    ])
-    
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
